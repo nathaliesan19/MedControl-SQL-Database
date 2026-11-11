@@ -81,7 +81,7 @@ The project includes 12 SQL queries designed to answer practical operational que
 Several database constraints were implemented to prevent inconsistencies, including:
 
 - Ensuring insurance coverage percentages remain between 0 and 100.
-- Preventing doctors from having overlapping appointments at the same scheduled time.
+- Preventing duplicate appointments for the same doctor at the same scheduled date and time.
 - Ensuring patient payment amounts match the invoice subtotal minus insurance coverage.
 - Maintaining relationships between appointments, consultations, prescriptions, and medical leave records.
 
