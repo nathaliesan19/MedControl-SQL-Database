@@ -99,3 +99,27 @@ I also gained experience translating operational requirements into structured da
 - **Development:** Collaborative academic project
 - **Authors:** Nathalie Sandí & María Paula Jiménez
 - **Year:** 2026
+
+## How to Run the Project
+
+To reproduce the database locally, follow these steps:
+
+**Requirements:**
+- Microsoft SQL Server
+- SQL Server Management Studio (SSMS)
+
+**Execution Steps:**
+
+1. Connect to your local SQL Server instance using SSMS.
+2. Execute `SQLQueryMedControl_v2.sql` to create the database and its 12 tables.
+3. Execute `SQLQueryMedControl_DatosPrueba.sql` to populate the database with sample records.
+4. Execute `SQLQueryMedControl_FixRecetasIncapacidades.sql` to recreate the prescriptions and medical leave tables and insert their corresponding sample records.
+5. Execute `SQLQueryMedControl_Consultas.sql` to run the 12 analytical and operational queries.
+
+**Note:** The fix script drops and recreates the `Recetas` and `Incapacidades` tables. Run it after the initial database creation and sample data insertion.
+
+## Dataset & Project Scope
+
+This project was developed as part of an academic database course using fictional sample data for demonstration purposes. No real patient information is included.
+
+The database was implemented locally using Microsoft SQL Server. Cloud deployment and AWS integration were not part of this project.
